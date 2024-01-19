@@ -1,11 +1,11 @@
-#Fri Jan 19 19:18:57 PKT 2024
-path.4=2/classes.dex
+#Fri Jan 19 22:07:29 PKT 2024
+path.4=7/classes.dex
 path.3=14/classes.dex
 path.2=0/classes.dex
 path.1=0/classes.dex
 path.5=classes2.dex
 path.0=classes.dex
-base.4=D\:\\projects\\TestProject\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
+base.4=D\:\\projects\\TestProject\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
 base.3=D\:\\projects\\TestProject\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
 base.2=D\:\\projects\\TestProject\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.1=D\:\\projects\\TestProject\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex

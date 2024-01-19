@@ -3,4 +3,5 @@ export const colors = {
   white: '#FFFFFF',
   transparent: 'transparent',
   primary: '#442445',
+  splashColor: '#E0B9BB',
 };

@@ -13,6 +13,10 @@ import java.util.ArrayList;
 
 // react-native-vector-icons
 import com.oblador.vectoricons.VectorIconsPackage;
+// @react-native-async-storage/async-storage
+import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
+// react-native-safe-area-context
+import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 
 public class PackageList {
   private Application application;
@@ -58,7 +62,9 @@ public class PackageList {
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
-      new VectorIconsPackage()
+      new VectorIconsPackage(),
+      new AsyncStoragePackage(),
+      new SafeAreaContextPackage()
     ));
   }
 }
