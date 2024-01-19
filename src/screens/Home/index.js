@@ -1,8 +1,12 @@
 import React from 'react';
-import {View} from 'react-native';
+import {Text, View} from 'react-native';
 
 const Home = () => {
-  return <View></View>;
+  return (
+    <View>
+      <Text>hekko</Text>
+    </View>
+  );
 };
 
 export default Home;

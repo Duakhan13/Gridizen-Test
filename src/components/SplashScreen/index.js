@@ -3,6 +3,7 @@ import {Animated, StyleSheet, StatusBar} from 'react-native';
 import {SCREEN_HEIGHT, SCREEN_WIDTH} from '../../utils/Methods';
 import {colors} from '../../utils/theme/colors';
 import {fontSizes} from '../../utils/theme/fontSizes';
+import {showLog} from '../../utils/Methods';
 
 export function WithSplashScreen({children, isAppReady}) {
   return (
@@ -23,7 +24,7 @@ const HIDDEN = 'Hidden';
 export const Splash = ({isAppReady}) => {
   const containerOpacity = useRef(new Animated.Value(1)).current;
   const imageOpacity = useRef(new Animated.Value(0)).current;
-
+  showLog(isAppReady, 'isAppReady-------isAppReady');
   const [state, setState] = useState(LOADING_IMAGE);
 
   useEffect(() => {
@@ -63,7 +64,6 @@ export const Splash = ({isAppReady}) => {
 
   return (
     <>
-      <StatusBar hidden={true} />
       <Animated.View
         collapsable={false}
         style={[styles.container, {opacity: containerOpacity}]}>
@@ -80,7 +80,7 @@ export const Splash = ({isAppReady}) => {
           collapsable={false}
           style={{opacity: containerOpacity, marginBottom: 100}}>
           <Animated.Image
-            source={require('../../assets/images/logowithname.png')}
+            source={require('../../assets/images/logo.png')}
             fadeDuration={0}
             onLoad={() => {
               setState(FADE_IN_IMAGE);
@@ -88,15 +88,6 @@ export const Splash = ({isAppReady}) => {
             style={[styles.image2]}
             resizeMode="contain"
           />
-          <Animated.Text
-            // style={style.getcartext}
-            style={[styles.sloganText]}
-            fadeDuration={0}
-            onLoad={() => {
-              setState(FADE_IN_IMAGE);
-            }}>
-            Unleash Your Creativity!
-          </Animated.Text>
         </Animated.View>
       </Animated.View>
     </>

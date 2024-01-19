@@ -5,7 +5,7 @@ import {persistStore} from 'redux-persist';
 import store from './src/core/store/store';
 import {PersistGate} from 'redux-persist/lib/integration/react';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
-// import RootNavigator from './src/navigation';
+import RootNavigator from './src/navigation';
 import {WithSplashScreen} from './src/components/SplashScreen';
 import {LogBox} from 'react-native';
 import Home from './src/screens/Home';
@@ -18,7 +18,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsAppReady(true);
-    }, 3000);
+    }, 2000);
   }, []);
 
   return (
@@ -26,8 +26,7 @@ const App = () => {
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
           <SafeAreaProvider>
-            {/* <RootNavigator /> */}
-            <Home />
+            <RootNavigator />
           </SafeAreaProvider>
         </PersistGate>
       </Provider>
