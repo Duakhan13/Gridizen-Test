@@ -1,11 +1,11 @@
 /** @format */
 
-import movieReducer from '../features/movieSlice';
+import postReducer from '../features/postSlice';
 import {combineReducers} from '@reduxjs/toolkit';
 import userReducer from '../features/userSlice';
 const appReducer = combineReducers({
   users: userReducer,
-  movies: movieReducer,
+  posts: postReducer,
 });
 
 const rootReducer = (state, action) => {

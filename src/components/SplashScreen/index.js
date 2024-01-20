@@ -24,7 +24,6 @@ const HIDDEN = 'Hidden';
 export const Splash = ({isAppReady}) => {
   const containerOpacity = useRef(new Animated.Value(1)).current;
   const imageOpacity = useRef(new Animated.Value(0)).current;
-  showLog(isAppReady, 'isAppReady-------isAppReady');
   const [state, setState] = useState(LOADING_IMAGE);
 
   useEffect(() => {
@@ -64,6 +63,7 @@ export const Splash = ({isAppReady}) => {
 
   return (
     <>
+      <StatusBar hidden={true} />
       <Animated.View
         collapsable={false}
         style={[styles.container, {opacity: containerOpacity}]}>

@@ -9,6 +9,8 @@ import RootNavigator from './src/navigation';
 import {WithSplashScreen} from './src/components/SplashScreen';
 import {LogBox} from 'react-native';
 import Home from './src/screens/Home';
+import {PaperProvider} from 'react-native-paper';
+import {ToastProvider} from 'react-native-toast-notifications';
 
 const App = () => {
   let persistor = persistStore(store);
@@ -26,7 +28,11 @@ const App = () => {
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
           <SafeAreaProvider>
-            <RootNavigator />
+            <ToastProvider>
+              <PaperProvider>
+                <RootNavigator />
+              </PaperProvider>
+            </ToastProvider>
           </SafeAreaProvider>
         </PersistGate>
       </Provider>

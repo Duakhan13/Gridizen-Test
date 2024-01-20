@@ -1,0 +1,42 @@
+[
+  {
+    "id": 0,
+    "placeholder": "First Name",
+    "name": "firstName",
+    "type": "text",
+    "hasError": false,
+    "errMessage": ""
+  },
+  {
+    "id": 1,
+    "placeholder": "Last Name",
+    "name": "lastName",
+    "type": "text",
+    "hasError": false,
+    "errMessage": ""
+  },
+  {
+    "id": 2,
+    "placeholder": "Email",
+    "name": "email",
+    "type": "email",
+    "hasError": false,
+    "errMessage": ""
+  },
+  {
+    "id": 3,
+    "placeholder": "Password",
+    "name": "password",
+    "type": "password",
+    "mhasError": false,
+    "errMessage": ""
+  },
+  {
+    "id": 4,
+    "placeholder": "Confirm Password",
+    "name": "confirmPassword",
+    "type": "password",
+    "hasError": false,
+    "errMessage": ""
+  }
+]
